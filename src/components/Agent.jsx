@@ -1,9 +1,5 @@
 import { Mail, Phone, MapPin, Star } from "lucide-react";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 function Agent() {
   return (
@@ -29,12 +25,18 @@ function Agent() {
         <div className="overflow-hidden rounded-3xl bg-white shadow-xl dark:bg-gray-950">
           <div className="grid gap-8 lg:grid-cols-2">
             {/* Image */}
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=900"
-                alt="Agent"
-                className="h-full w-full object-cover"
-              />
+            <div className="flex items-center justify-center p-6">
+              <div className="relative">
+                <img
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=900"
+                  alt="Agent"
+                  className="h-72 w-64 rounded-3xl object-cover shadow-2xl sm:h-80 sm:w-72 md:h-96 md:w-80"
+                />
+
+                <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 rounded-full bg-blue-600 px-5 py-2 text-sm font-semibold text-white shadow-lg">
+                  8+ Years Experience
+                </div>
+              </div>
             </div>
 
             {/* Content */}
@@ -43,9 +45,7 @@ function Agent() {
                 Senior Property Consultant
               </span>
 
-              <h2 className="mt-5 text-3xl font-bold">
-                Rajesh Kumar
-              </h2>
+              <h2 className="mt-5 text-3xl font-bold">Rajesh Kumar</h2>
 
               <p className="mt-5 leading-7 text-gray-600 dark:text-gray-300">
                 With over 8 years of experience, Rajesh has helped hundreds of
